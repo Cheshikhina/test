@@ -1,0 +1,44 @@
+// sizes
+$mobile_min: 320px;
+$mobile_max: 768px;
+$tablet_max: 1024px;
+$desktop_max: 1920px;
+$no_mobile: 769px;
+
+//color
+$white: #ffffff;
+$black: #000000;
+$accent_1: #00b165;
+$accent_2: #005f1f;
+$text_header: #369b57;
+$btn_reset_active: #666666;
+$btn_reset_disable: rgba(189, 189, 189, 0.6);
+$btn_reset_text: #878c88;
+$btn_submit: #ff9d25;
+$btn_more: #efefef;
+$btn_border: #ffb65c;
+$label: #b0ccf9;
+$overlay: rgba(0, 0, 0, 0.1);
+
+// fonts size
+$main_font: 14;
+
+$fs_9: 9;
+$fs_10: 10;
+$fs_12: 12;
+$fs_14: 14;
+$fs_16: 16;
+$fs_20: 20;
+$fs_24: 24;
+
+// another
+$duration_03: 0.3s;
+
+$box_shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+
+$br_04: 4px;
+$br_1: 10px;
+
+// retina
+$retina_dpi: 144dpi;
+$retina_dppx: 1.5dppx;

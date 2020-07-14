@@ -1,0 +1,182 @@
+.header {
+  margin: 8px 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+  z-index: 10;
+}
+
+.header__top {
+  @include flex_center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.header__top_logo {
+  width: 100%;
+  max-width: 272px;
+  height: auto;
+}
+
+.header__top_age {
+  @include flex_center(1);
+  @include font($fs_14);
+  margin: 0;
+  font-weight: 700;
+  min-width: 31px;
+  min-height: 31px;
+  border-radius: 50%;
+  color: $white;
+  background-color: $text_header;
+}
+
+.header__main {
+  padding: 7px 0;
+  background-color: $accent_2;
+}
+
+.header__main_text,
+.header__main_text a {
+  @include font($fs_12);
+  margin: 0;
+  text-align: center;
+  color: $text_header;
+}
+
+.header__main_text {
+  margin-bottom: 10px;
+}
+
+.header__main_nav {
+  @include flex_center;
+  justify-content: space-around;
+
+  a {
+    @include font($fs_16);
+    font-weight: 700;
+    color: $white;
+  }
+}
+
+.header__preamble {
+  @include background("background", "jpg", $accent_1);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__preamble_inner {
+  @include flex_center;
+  min-height: 330px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 9px;
+}
+
+.header__title {
+  @include font($fs_24);
+  max-width: 240px;
+  margin: 0;
+  margin-bottom: 55px;
+  line-height: 1.2;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__preamble form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -49px;
+}
+
+.header__btn_watch {
+  @include button;
+  @include font($fs_20);
+  margin-bottom: 15px;
+  padding: 32px 32px 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $white;
+  border: 2px solid $btn_border;
+  background-color: $btn_submit;
+  box-shadow: $box_shadow;
+  border-radius: $br_1;
+}
+
+.header__btn_cancel {
+  @include button;
+  @include font($fs_14);
+  padding: 8px 33px 6px;
+  border-radius: $br_04;
+  color: $btn_reset_text;
+  background-color: $btn_reset_disable;
+}
+
+
+@media (max-width: $tablet_max) {
+
+  .header__main_text,
+  .header__main_text a {
+    @include font($fs_10);
+  }
+
+  .header__title {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: $mobile_max) {
+
+  .header__top_logo {
+    width: 60%;
+    max-width: 272px;
+    height: auto;
+  }
+
+  .header__top {
+    margin-bottom: 3px;
+  }
+
+  .header__main {
+    padding: 3px 0;
+  }
+
+  .header__main_nav a {
+    @include font($fs_12);
+  }
+}
+
+@media (max-width: 635px) {
+  .header__preamble_inner {
+    min-height: 35vw;
+  }
+
+  .header__preamble form {
+    margin-bottom: -38px;
+  }
+
+  .header__btn_watch {
+    @include font($fs_10);
+    padding: 10px 5px;
+  }
+
+  .header__btn_cancel {
+    @include font($fs_12);
+    padding: 3px 15px 2px;
+  }
+
+  .header__title {
+    @include font($fs_12);
+    margin-bottom: 5px;
+  }
+
+  .header__top_logo {
+    width: 50%;
+  }
+
+  .header__top_age {
+    @include font($fs_10);
+    min-width: 25px;
+    min-height: 25px;
+  }
+}

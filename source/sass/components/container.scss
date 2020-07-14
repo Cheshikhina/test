@@ -1,0 +1,17 @@
+.container {
+  @include container(768, 30);
+}
+
+@media (max-width: $tablet_max) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: $mobile_max) {
+  .container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
